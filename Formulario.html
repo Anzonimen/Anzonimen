@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>PoorBrand</title>
+    
+    <style>
+      
+        table {
+          border-collapse: collapse;
+          width: 600px;
+    height: 300px; 
+        }
+        td, th {
+          border: 1px solid black;
+          padding: 5px; /* Agrega un poco de espacio alrededor del contenido de la celda */
+        }
+
+      </style>
+</head>
+<body>
+    <header>
+		<div id="div1" style="display: flex; justify-content: center; align-items: center;">
+			<h1 id="titulo1" style="margin: 0 0 0 147px; color: white;">"𝑼𝒔𝒆 𝒐𝒖𝒓 𝒑𝒐𝒐𝒓 𝒃𝒓𝒂𝒏𝒅</h1>
+			<img src="Imagenes\PoorBrand.PNG" alt="WhatAreYouLooking" width="70" height="60" style="margin: 0 auto;">
+			<h1 id="titulo2" style="margin: 0 197px 0 0; color: white;">"𝙏𝙤 𝙛𝙡𝙞𝙧𝙩 𝙬𝙞𝙩𝙝 𝙧𝙞𝙘𝙝</h1>
+		  </div>
+
+    <!-- /* Menú lateral */ -->
+    <div class="menu">
+        <label for="menu" ><img src="Imagenes\astedis.png" alt="Menu"  width="60" height="50" style="margin: 0 auto;"></label>
+       <!-- /*  <img src="Imagenes\Carrito.png"  id="carrito" alt="Menu"  width="60" height="50"> */ -->
+    </div>
+  
+    <input type="checkbox" id="menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="Tienda.html">Shop </a>
+                <a href="#">We Still poor :(</a>
+                <a href="#">We Still poor :(</a>
+                <a href="#">We Still poor :(</a>
+                <a href="Tallas.html">Sizing </a>
+                <a href="https://www.instagram.com/">Instagram</a>
+            </nav>
+            <label for="menu">✖️</label>
+        </div>
+    </div>
+    <!-- /* Menú lateral */ -->
+</header>
+
+<h1>Pedido de Producto</h1>
+<form action="procesar_pedido.php" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+<br>
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required>
+<br>
+    <label for="producto">Producto:</label>
+    <select id="producto" name="producto">
+        <option value="producto1">Producto 1</option>
+        <option value="producto2">Producto 2</option>
+        <option value="producto3">Producto 3</option>
+    </select>
+<br>
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad" required>
+<br>
+    <label for="comentarios">Comentarios:</label>
+    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+<br>
+    <input type="submit" value="Enviar Pedido">
+</form>
+</body>
+</html>
